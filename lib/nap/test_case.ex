@@ -1,5 +1,6 @@
 defmodule Nap.TestCase do
   alias Nap.Util
+  require ExUnit.Assertions
 
   defmacro __using__(_) do
     quote do
@@ -32,8 +33,6 @@ defmodule Nap.TestCase do
       end
     end
   end
-
-  require ExUnit.Assertions
 
   defmacro assert_nap(testname, actual_value, comment \\ "") do
     quote do
