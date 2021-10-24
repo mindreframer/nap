@@ -14,7 +14,6 @@ Features:
 - support for interactive snapshot updates, to keep your test maintenance minimal
 - snapshots are stored in plain-text, so Git diffing is supported
 - the overhead compared to manual inline assertions is quite low, in synthetic benchmarks I had numbers of roughly 2-4x slower (if your test suite is dominated by comparisons of static values)
--
 
 ## Example
 
@@ -103,4 +102,3 @@ be found at [https://hexdocs.pm/nap](https://hexdocs.pm/nap).
 - [Json Term Elixir Package](https://github.com/kaaboaye/json_term)
 - [ETS](https://elixirschool.com/en/lessons/storage/ets)
 - [The New Scalable ETS ordered_set](https://blog.erlang.org/the-new-scalable-ets-ordered_set/)
-- [A simple streamable binary-serialization container format based on Erlang's External Term Format](https://github.com/tsutsu/etfs/tree/master/lib)
