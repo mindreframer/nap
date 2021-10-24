@@ -26,13 +26,14 @@ defmodule Nap.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jason, "~> 1.2"}
+      {:jason, "~> 1.2"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
   defp description() do
     """
-    Nap is a - JEST inspired snapshotting test package for Elixir.
+    Nap is a JEST inspired snapshotting test package for Elixir.
     It's quite general and can be used for all snapshotting purposes, not just for REST API testing.
     """
   end
