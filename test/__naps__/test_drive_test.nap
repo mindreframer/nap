@@ -1,0 +1,8 @@
+["jt",["l",[["t",["NapTestDriveTest","another nap snapshot test case",0]],["m",{"a":5}]]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",0]],100]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",1]],10.0]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",2]],["m",{"a":2}]]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",3]],["t",[["a","also"],["a","with"],"tuples"]]]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",4]],"string"]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",5]],["m",{"a":"long\n    multistring\n    text\n\n    works fine, too"}]]]]
+["jt",["l",[["t",["NapTestDriveTest","nap snapshot test case",6]],["s","Elixir.NapTestDriveTest.MyStruct",{"a":1,"b":2}]]]]
