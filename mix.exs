@@ -27,6 +27,7 @@ defmodule Nap.MixProject do
   defp deps do
     [
       {:jason, "~> 1.2"},
+      {:pathex, "~> 1.2.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
