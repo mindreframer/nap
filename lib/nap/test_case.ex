@@ -23,6 +23,7 @@ defmodule Nap.TestCase do
             if @nap_flag_verbose do
               IO.puts("DUMPING #{@nap_table}")
             end
+
             Nap.dump(@nap_table, @nap_file)
           end
         end)
@@ -43,6 +44,7 @@ defmodule Nap.TestCase do
 
       with {:ok, stored_value} <- Nap.get(@nap_table, module, testname, snapindex) do
         realvalue = unquote(actual_value)
+
         if stored_value != realvalue && @nap_flag_interactive do
           Nap.cache_put({@nap_table, :dirty}, true)
 

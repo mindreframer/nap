@@ -2,7 +2,7 @@ defmodule NapTestDriveTest do
   use ExUnit.Case, async: true
   use Nap.TestCase
 
-  defmodule MyStruct, do: defstruct a: nil, b: nil
+  defmodule MyStruct, do: defstruct(a: nil, b: nil)
 
   test "normal ExUnit test" do
     assert 1 == 1
