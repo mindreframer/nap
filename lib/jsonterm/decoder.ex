@@ -1,5 +1,5 @@
-defmodule JsonTerm.Decoder do
-  use JsonTerm.Types
+defmodule Nap.JsonTerm.Decoder do
+  use Nap.JsonTerm.Types
 
   def decode!(json) do
     [@json_term_type, json] = json

@@ -1,4 +1,4 @@
-defmodule JsonTerm.Types do
+defmodule Nap.JsonTerm.Types do
   @types [
     json_term: "jt",
     list: "l",
@@ -28,7 +28,7 @@ defmodule JsonTerm.Types do
   def types, do: @types
 
   defmacro __using__(_opts \\ []) do
-    Enum.each(JsonTerm.Types.types(), fn {type, symbol} ->
+    Enum.each(Nap.JsonTerm.Types.types(), fn {type, symbol} ->
       Module.put_attribute(__CALLER__.module, :"#{type}_type", symbol)
     end)
   end

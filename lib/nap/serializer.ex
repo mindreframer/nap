@@ -1,9 +1,9 @@
 defmodule Nap.Serializer do
   def encode!(v) do
-    v |> JsonTerm.encode!() |> Jason.encode!()
+    v |> Nap.JsonTerm.encode!() |> Jason.encode!()
   end
 
   def decode!(v) do
-    v |> Jason.decode!() |> JsonTerm.decode!()
+    v |> Jason.decode!() |> Nap.JsonTerm.decode!()
   end
 end

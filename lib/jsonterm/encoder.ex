@@ -1,5 +1,5 @@
-defmodule JsonTerm.Encoder do
-  use JsonTerm.Types
+defmodule Nap.JsonTerm.Encoder do
+  use Nap.JsonTerm.Types
 
   def encode!(term) do
     encoded = do_encode(term)

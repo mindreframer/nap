@@ -1,5 +1,5 @@
-defmodule JsonTerm do
-  defdelegate encode!(term), to: JsonTerm.Encoder
-  defdelegate decode!(term), to: JsonTerm.Decoder
-  defdelegate types, to: JsonTerm.Types
+defmodule Nap.JsonTerm do
+  defdelegate encode!(term), to: Nap.JsonTerm.Encoder
+  defdelegate decode!(term), to: Nap.JsonTerm.Decoder
+  defdelegate types, to: Nap.JsonTerm.Types
 end
