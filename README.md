@@ -1,4 +1,6 @@
-# Nap
+# Nap - give your test suite a refreshing nap!
+
+![CI](https://github.com/mindreframer/nap/actions/workflows/ci.yml/badge.svg)
 
 [Jest](https://jestjs.io/) - inspired snapshotting test package for Elixir. It's quite general and can be used for all snapshotting purposes, not just for REST API testing.
 
