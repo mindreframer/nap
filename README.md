@@ -91,10 +91,10 @@ be found at [https://hexdocs.pm/nap](https://hexdocs.pm/nap).
 ### Inspiration
 
 - https://github.com/sb8244/elixir_response_snapshot
+- https://github.com/dczajkowski/snapshy
+- https://github.com/assert-value/assert_value_elixir
 - https://github.com/jfrolich/snapshot
 - https://github.com/sebastiandedeyne/snapshots
-- https://github.com/dczajkowski/snapshy
-- https://github.com/derekkraan/walkman/blob/master/lib/walkman/tape.ex
 
 ### Links
 

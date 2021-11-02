@@ -30,14 +30,14 @@ defmodule Nap.JsonTerm.Decoder do
 
   defp do_decode([@struct_type, struct, fields]) do
     struct = String.to_existing_atom(struct)
-    fields = Enum.map(fields, fn {k, v} -> {String.to_existing_atom(k), do_decode(v)} end)
+    fields = Enum.map(fields, fn {k, v} -> {String.to_atom(k), do_decode(v)} end)
     # struct!(struct, fields)
     ## we make struct handling less restrictive, to be able to serialize non-existing structs
     Enum.into(fields, %{}) |> Map.put(:__struct__, struct)
   end
 
   defp do_decode([@map_type, fields]) do
-    Map.new(fields, fn {k, v} -> {String.to_existing_atom(k), do_decode(v)} end)
+    Map.new(fields, fn {k, v} -> {String.to_atom(k), do_decode(v)} end)
   end
 
   defp do_decode([@dictionary_type, fields]) do
