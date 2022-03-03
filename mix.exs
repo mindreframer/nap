@@ -4,7 +4,7 @@ defmodule Nap.MixProject do
   def project do
     [
       app: :nap,
-      version: "0.2.0",
+      version: "0.2.1",
       package: package(),
       description: description(),
       elixir: "~> 1.12",

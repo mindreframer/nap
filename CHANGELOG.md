@@ -1,3 +1,7 @@
+## 0.2.1 - 2022-03-03
+
+- Fixes another issues affected by strict string to atom conversion.
+
 ## 0.2.0 - 2021-11-02
 
 - Relax security considering converting string to atoms (we are in test mode, so it **should** not be a big concern)
