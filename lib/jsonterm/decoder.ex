@@ -11,7 +11,7 @@ defmodule Nap.JsonTerm.Decoder do
        do: json
 
   defp do_decode([@list_type, json]), do: Enum.map(json, &do_decode/1)
-  defp do_decode([@atom_type, atom]), do: String.to_existing_atom(atom)
+  defp do_decode([@atom_type, atom]), do: String.to_atom(atom)
   defp do_decode([@tuple_type, tuple]), do: tuple |> Enum.map(&do_decode/1) |> List.to_tuple()
   defp do_decode([@binary_type, binary]), do: Base.decode64!(binary)
   defp do_decode([@date_type, date]), do: Date.from_iso8601!(date)
